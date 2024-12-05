@@ -1,30 +1,90 @@
-#container{
+body {
+    background-color: #f2f2f2;
+}
+
+#container {
+    opacity: 0.5;
     width: 936px;
     display: flex;
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
     border: 2px solid #000;
+    margin-left: 124px;
+    margin-top: 146px;
 }
 
-#left{
+#left {
     width: 240px;
     background-color: #f2f2f2;
-    height: 335px;
+    height: 339px;
     border: 2px solid #000;
 }
 
 #middle {
     width: 568px;
-    height: 339px;
+    height: 342px;
     background-color: rgb(0, 0, 106);
     padding: 35px;
     box-sizing: border-box;
     border: 2px solid #000;
 }
 
-#right{
-    width:128px;
-    height: 335px;
+#right {
+    width: 128px;
+    height: 339px;
     background-color: rgb(0, 0, 106);
     border: 2px solid #000;
+}
+
+.witvierkantrechts {
+    position: relative;
+    width: 94px;
+    height: 94px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 36px;
+    margin-left: 15px;
+}
+
+.blauwvierkantrechts {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(0, 0, 106);
+}
+
+.eentwintig {
+    position: absolute;
+    font-size: 65px;
+    color: rgb(0, 0, 106);
+    margin-top: 25px;
+    margin-left: 0px;
+    font-weight: bold;
+}
+
+.letterb {
+    position: absolute;
+    font-size: 35px;
+    color: rgb(0, 0, 106);
+    margin-top: 30px;
+    margin-left: 70px;
+    font-weight: bold;
+}
+
+.spoorrechts {
+    position: absolute;
+    font-size: 15px;
+    color: rgb(0, 0, 106);
+    margin-top: 0px;
+    margin-left: 22px;
+}
+
+.witvierkantmidden {
+    position: relative;
+    width: 475px;
+    height: 255px;
+    background-color: rgb(255, 255, 255);
+    margin-top: -1px;
+    margin-left: 5px;
 }
