@@ -1,35 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weekopdracht - NS-Treinbord Malek</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/clock.css" />
+    <script src="assets/js/script.js"></script>
 </head>
-
 
 <body>
     <div id="container">
         <div id="left">
             <!-- hier komt de klok -->
+            <div id="clock">
+                <div id="hand-hour"></div>
+                <div id="hand-min"></div>
+                <div id="hand-sec">
+                    <div class="line"></div>
+                    <div class="circle"></div>
+                    <div class="line"></div>
+                </div>
+                <div id="minutes"></div>
+            </div>
         </div>
         <div id="middle">
-            <div class="witvierkantmidden">
-                <div class="nummer1rechts"></div>
+            <!-- Hier komt de reizigers info -->
+            <div id="content-box">
+                <div id="content">
+                    <div id="time"><span id="num">16:47</span><span id="extraTime"></span></div>
+                    <div id="train-type">Intercity</div><img src="/assets/img/ns_logo.png"></img>
+                    <div id="destination">Den Haag Centraal</div>
+                    <div id="via">via Leidsche Rijn, Terwijde, Vleuten, Woerden en Gouda</div>
+                    <div id="message"></div>
+                </div>
+                <div id="footer">
+                    <span id="next">Hierna/next: 17:15 SPR Woerden</span>
+                </div>
             </div>
         </div>
         <div id="right">
-            <div class="witvierkantrechts">
-                <div class="blauwvierkantrechts"></div>
-                <div class="eentwintig">21</div>
-                <div class="letterb">a</div>
-                <div class="spoorrechts">spoor</div>
+            <!-- hier komt het spoor nummer -->
+            <div id="block-right">
+                <div id="small-block-right"></div>
+                <p>spoor</p>
+                <div id="track">21<span id="track-letter"> b</span></div>
             </div>
         </div>
     </div>
 </body>
-
 
 </html>

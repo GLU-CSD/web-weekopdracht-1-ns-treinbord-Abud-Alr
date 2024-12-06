@@ -1,90 +1,186 @@
 body {
-    background-color: #f2f2f2;
+    /* background-image: url("/assets/img/ns_bord.webp"); */
+    background-repeat: no-repeat;
+    background-position: 335px -140px;
+    background-size: auto;
 }
 
 #container {
-    opacity: 0.5;
     width: 936px;
     display: flex;
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
     border: 2px solid #000;
-    margin-left: 124px;
-    margin-top: 146px;
+    font-weight: 600;
+    /* opacity: 50%; */
 }
 
 #left {
     width: 240px;
     background-color: #f2f2f2;
-    height: 339px;
+    height: 335px;
     border: 2px solid #000;
+    align-items: center;
+    justify-content: center;
 }
 
 #middle {
     width: 568px;
-    height: 342px;
-    background-color: rgb(0, 0, 106);
-    padding: 35px;
-    box-sizing: border-box;
+    height: 335px;
+    background-color: #1441ad;
     border: 2px solid #000;
 }
 
 #right {
     width: 128px;
-    height: 339px;
-    background-color: rgb(0, 0, 106);
+    height: 335px;
+    background-color: #1441ad;
     border: 2px solid #000;
 }
 
-.witvierkantrechts {
-    position: relative;
-    width: 94px;
-    height: 94px;
-    background-color: rgb(255, 255, 255);
-    margin-top: 36px;
-    margin-left: 15px;
+#block-right {
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    background-color: white;
+    margin: 30px 16px;
 }
 
-.blauwvierkantrechts {
+#small-block-right {
     position: absolute;
-    left: 0;
-    right: 0;
     width: 20px;
     height: 20px;
-    background-color: rgb(0, 0, 106);
+    background-color: #1441ad;
 }
 
-.eentwintig {
-    position: absolute;
-    font-size: 65px;
-    color: rgb(0, 0, 106);
-    margin-top: 25px;
-    margin-left: 0px;
-    font-weight: bold;
-}
-
-.letterb {
-    position: absolute;
-    font-size: 35px;
-    color: rgb(0, 0, 106);
-    margin-top: 30px;
-    margin-left: 70px;
-    font-weight: bold;
-}
-
-.spoorrechts {
-    position: absolute;
-    font-size: 15px;
-    color: rgb(0, 0, 106);
-    margin-top: 0px;
-    margin-left: 22px;
-}
-
-.witvierkantmidden {
+#block-right p {
     position: relative;
-    width: 475px;
-    height: 255px;
-    background-color: rgb(255, 255, 255);
-    margin-top: -1px;
-    margin-left: 5px;
+    top: -6px;
+    left: 25px;
+    font-size: 11px;
+    color: #1441ad;
+    font-weight: 600;
+}
+
+#track {
+    position: relative;
+    text-align: center;
+    font-size: 56px;
+    font-weight: 600;
+    margin: -6px auto;
+    color: #1441ad;
+}
+
+#track-letter {
+    font-size: 24px;
+    top: 20px;
+}
+
+#content-box {
+    width: 480px;
+    height: 265px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#content {
+    width: 480px;
+    height: 240px;
+    background-color: white;
+    box-sizing: border-box;
+    border: 3px solid rgb(0, 0, 106);
+    color: rgb(0, 0, 106);
+}
+
+#time {
+    width: 245px;
+    height: 40px;
+    font-size: 21px;
+    box-sizing: border-box;
+    padding-left: 9px;
+}
+
+#time #num {
+    font-size: 30px;
+    padding-right: 5px;
+}
+
+#time #extraTime {
+    font-size: 25px;
+    color: rgb(255, 0, 0);
+}
+
+#train-type {
+    width: 129.05px;
+    height: 40px;
+    font-size: 35px;
+    text-align: right;
+    position: absolute;
+    top: 2px;
+    left: 240px;
+}
+
+#content img {
+    height: 40px;
+    width: 95.95px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+#destination {
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+#via {
+    font-size: 20px;
+    padding: 10px;
+    margin-right: 80px;
+}
+
+#message {
+    height: 22px;
+    width: 460px;
+    position: absolute;
+    bottom: 29px;
+    font-size: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding-left: 10px;
+}
+
+#message p {
+    display: inline-block;
+    margin-top: 0px;
+    color: red;
+    /* animation: move 14s ease-in-out infinite; */
+    /* animation-direction: alternate; */
+    position: relative;
+}
+
+@keyframes move {
+    25% {
+        transform: translate(0, 0);
+        left: 0%;
+    }
+    75%,
+    100% {
+        transform: translate(-100%, 0);
+        left: 100%;
+    }
+}
+
+#footer {
+    width: 480px;
+    height: 25px;
+    background: linear-gradient(45deg, transparent 7px, rgb(0, 0, 106) 0);
+}
+
+#next {
+    color: white;
+    font-size: 20px;
+    padding-left: 10px;
 }
